@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Tap Titans 2 tools by kasaden in one place: the Alchemy Lab optimizer, Dungeon Eggsplorer maps and more." />
+  <title>TT2 Hub</title>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="TT2 Hub" />
+  <meta property="og:title" content="TT2 Hub, Tap Titans 2 tools in one place" />
+  <meta property="og:description" content="Pick the tool for your Tap Titans 2 event and open it." />
+  <meta property="og:url" content="https://kasaden.github.io/tt2_hub/" />
+  <meta name="theme-color" content="#0e1118" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@500&family=Outfit:wght@600;700&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#tools">Skip to the tools</a>
+
+  <header class="masthead">
+    <img class="hub-mark" src="assets/emblems/hub.svg" alt="" width="56" height="56" />
+    <div class="masthead-text">
+      <h1>TT2 Hub</h1>
+      <p>Tap Titans 2 tools by kasaden, in one place. Pick the one for your event and open it.</p>
+    </div>
+  </header>
+
+  <main id="tools" class="hub" tabindex="-1">
+    <section class="tray-area" aria-labelledby="trayTitle">
+      <div class="tray-head">
+        <h2 id="trayTitle">Tools</h2>
+        <span id="toolCount" class="count"></span>
+      </div>
+
+      <div id="finder" class="finder" hidden>
+        <label class="visually-hidden" for="search">Search tools</label>
+        <input id="search" class="search" type="search" placeholder="Search by name or event" autocomplete="off" />
+        <div id="eventFilters" class="filters" role="group" aria-label="Filter by event"></div>
+      </div>
+
+      <p id="loading" class="loading" role="status" hidden>Loading the tools…</p>
+
+      <ul id="tray" class="tray"></ul>
+
+      <div id="emptyResult" class="empty" hidden>
+        <p id="emptyText"></p>
+        <button id="clearSearch" type="button" class="btn-quiet">Clear search</button>
+      </div>
+
+      <div id="loadError" class="notice" role="alert" hidden>
+        <p>The tool list could not load. Check your connection and reload the page.</p>
+        <button id="reload" type="button" class="btn-quiet">Reload</button>
+      </div>
+
+      <noscript>
+        <p class="notice">The tool list needs JavaScript to show.</p>
+      </noscript>
+    </section>
+
+    <aside id="panel" class="panel" aria-labelledby="panelTitle" hidden></aside>
+  </main>
+
+  <footer class="site-footer">
+    <p>Each tool credits the community sources it is built from.</p>
+    <p>
+      Unofficial. Tap Titans 2 is a trademark of Game Hive Corp.
+      This site is not affiliated with or endorsed by Game Hive.
+    </p>
+    <p>
+      MIT licence, © 2026 kasaden.
+      <a href="https://github.com/kasaden/tt2_hub">Source code</a>
+    </p>
+  </footer>
+
+  <script type="module" src="index.js"></script>
+</body>
+</html>

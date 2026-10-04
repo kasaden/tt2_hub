@@ -1,0 +1,48 @@
+{
+  "tools": [
+    {
+      "id": "alchemy-optimizer",
+      "title": "TT2 Alchemy Optimizer",
+      "summary": "Finds the best crafting path for your Alchemy Lab inventory.",
+      "facts": [
+        "Exact optimizer: says when a plan is proven best",
+        "Recipe Book with all 136 recipes, as a table or a matrix",
+        "Runs in your browser; your inventory stays on your device"
+      ],
+      "event": "Alchemy Lab",
+      "url": "https://kasaden.github.io/tt2_alchemy_lab/",
+      "author": { "name": "kasaden", "own": true },
+      "emblem": "assets/emblems/alchemy-optimizer.svg",
+      "accent": "#a455cf",
+      "sources": [
+        {
+          "label": "Community spreadsheet",
+          "url": "https://docs.google.com/spreadsheets/d/1o95Ipwx6NIyFV3LCz9LGNbH9_WELHF-pbpkM31YwXyY/edit?gid=1745300311#gid=1745300311"
+        }
+      ],
+      "repo": "https://github.com/kasaden/tt2_alchemy_lab"
+    },
+    {
+      "id": "eggsplorer-depths",
+      "title": "Eggsplorer Depths",
+      "summary": "Community depth maps for Dungeon Eggsplorer: the path through each depth and what it drops.",
+      "facts": [
+        "Every depth as a 9 by 9 map",
+        "Reward totals for one depth or the whole dungeon",
+        "Link straight to a depth or a single tile"
+      ],
+      "event": "Dungeon Eggsplorer",
+      "url": "https://kasaden.github.io/tt2_dungeon_eggsplorer/",
+      "author": { "name": "kasaden", "own": true },
+      "emblem": "assets/emblems/eggsplorer-depths.svg",
+      "accent": "#dca644",
+      "sources": [
+        {
+          "label": "Community spreadsheet",
+          "url": "https://docs.google.com/spreadsheets/d/1hbrPgt0tHw-fJSjUZ6PY56TLY6uEIxX-lImWFQnKDos/edit?gid=1900671761#gid=1900671761"
+        }
+      ],
+      "repo": "https://github.com/kasaden/tt2_dungeon_eggsplorer"
+    }
+  ]
+}
